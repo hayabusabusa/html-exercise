@@ -10,9 +10,9 @@ Webサイト上にある目次・メニューであるナビゲーションを�
 ナビゲーションには専用のタグ `<nav>` が用意されており、  
 この `<nav>`タグで該当箇所を囲うことで、そこがナビゲーションであることを示すことができる。
 
-| chot design のナビゲーション |
+| chot inc のナビゲーション |
 | :-: |
-| <img width="830" alt="スクリーンショット 2021-01-20 15 44 02" src="https://user-images.githubusercontent.com/31949692/105137742-29f23480-5b37-11eb-9ec4-d4bc672cf8e1.png"> |
+| <img width="1440" alt="スクリーンショット 2021-01-20 18 59 53" src="https://user-images.githubusercontent.com/31949692/105158814-b90c4600-5b51-11eb-906b-4356453e6e3c.png"> |
 
 ## nav タグ
 
