@@ -1,0 +1,19 @@
+.section1-p1 {
+    color: red;
+}
+
+.section2-p1-span-red{
+    color: #FF0000;
+}
+
+.section2-p1-span-green {
+    color: #00FF00;
+}
+
+.section2-p1-span-blue {
+    color: #0000FF;
+}
+
+.section3-p1 {
+    color: rgba(255, 0, 0, 0.5);
+}
