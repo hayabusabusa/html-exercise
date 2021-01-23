@@ -1,0 +1,20 @@
+body {
+    background-color: #fefbfb;
+}
+
+main {
+    margin: auto;
+    width: 675px;
+}
+
+.section1-p-right {
+    text-align: right;
+}
+
+.section2-p-center {
+    text-align: center;
+}
+
+.section4-p-line-height {
+    line-height: 2.0;
+}
