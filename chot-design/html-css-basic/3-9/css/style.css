@@ -1,0 +1,48 @@
+body {
+    background-color: #fefbfb;
+}
+
+main {
+    margin: auto;
+    width: 675px;
+}
+
+hr {
+    background-color: #CCD0D9;
+    height: 1px;
+    border: none;
+}
+
+.container {
+    border: solid 1px #CCD0D9;
+    background-color: white;
+    padding: 24px;
+}
+
+.margin-container {
+    background-color: #ED5466;
+    width: 160px;
+    height: 80px;
+    margin: 24px;
+}
+
+.padding-container {
+    background-color: #5D9CEC;
+    width: 160px;
+    height: 80px;
+    padding: 24px;
+}
+
+.margin-auto-container {
+    background-color: #AC92ED;
+    margin: auto;
+    width: 160px;
+    height: 80px;
+}
+
+.margin-all-container {
+    background-color: #FB6E52;
+    margin: 40px 30px 20px 10px;
+    width: 160px;
+    height: 80px;
+}
