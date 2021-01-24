@@ -48,10 +48,6 @@ header {
 }
 
 @media all and (max-width: 767px) {
-    .kv {
-        width: 100%;
-    }
-
     .kv-texts {
         top: 19%;
         width: 64%;

@@ -2,6 +2,12 @@
 
 要素の位置や大きさを変えるレイアウトの実装について。
 
+## 完成形
+
+| PC | SP |
+| :-: | :-: |
+| <img width="1440" alt="スクリーンショット 2021-01-25 0 45 58" src="https://user-images.githubusercontent.com/31949692/105635564-dff6af00-5ea6-11eb-9375-24142e1663f9.png"> | <img width="629" alt="スクリーンショット 2021-01-25 0 46 12" src="https://user-images.githubusercontent.com/31949692/105635581-f3097f00-5ea6-11eb-920e-f3552441ce3b.png"> |
+
 ## 実装
 
 基本的には PC から実装した方が良さげ。  
