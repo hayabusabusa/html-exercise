@@ -1,0 +1,50 @@
+body {
+    background-color: #fefbfb;
+}
+
+main {
+    margin: auto;
+    width: 675px;
+    padding-bottom: 48px;
+}
+
+.container {
+    border: solid 1px #CCD0D9;
+    background-color: white;
+    padding: 24px;
+}
+
+.grid-container {
+    background-image: url("https://user-images.githubusercontent.com/31949692/105665938-6ea51380-5f1b-11eb-8b28-28e4e2562941.png");
+    border: solid 1px #CCD0D9;
+    height: 128px;
+}
+
+.relative-position-box {
+    background-color: red;
+    position: relative;
+    top: 16px;
+    left: 32px;
+    width: 80px;
+    height: 80px;
+}
+
+.absolute-position-box {
+    background-color: #faa;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 24px;
+    height: 24px;
+}
+
+.fixed-position-footer {
+    position: fixed;
+    border-top: solid 1px #CCD0D9;
+    background-color: #fefbfb;
+    padding-left: 48px;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 48px;
+}
