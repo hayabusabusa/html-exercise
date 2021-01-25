@@ -1,0 +1,55 @@
+body {
+    background-color: #fefbfb;
+}
+
+main {
+    margin: auto;
+    width: 675px;
+}
+
+.container {
+    border: solid 1px #CCD0D9;
+    background-color: white;
+    padding: 24px;
+}
+
+.section1-floated-image {
+    float: left;
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+}
+
+.section2-floated-image {
+    float: left;
+    object-fit: cover;
+    width: 100px;
+    height: 120px;
+}
+
+.section2-cleared-image {
+    clear: both;
+    object-fit: cover;
+    width: 200px;
+    height: 120px;
+}
+
+.floated-section {
+    border-bottom: solid 1px #CCD0D9;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+}
+
+.floated-section:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.floated-section-image {
+    float: left;
+    width: 128px;
+    height: 128px;
+    margin-right: 16px;
+    object-fit: cover;
+}

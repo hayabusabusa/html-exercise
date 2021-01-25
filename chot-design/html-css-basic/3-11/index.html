@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3-11. Float property</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <article>
+            <h2>3-11. 要素の回り込みを指定する</h2>
+
+            <p><strong>float</strong> の指定の仕方について</p>
+
+            <section>
+                <h3>基本的な指定</h3>
+
+                <p>画像とテキストを左右で並べたりしたい場合</p>
+                <p>テキストが画像の高さを超えると、横幅いっぱいまで広がる</p>
+
+                <div class="container">
+                    <p>
+                        <img class="section1-floated-image" src="https://images.unsplash.com/photo-1598896130238-5606c05ec207?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80" alt="猫の画像">
+                        <strong>ノルウェージャンフォレストキャット(英：Norwegian Forest Cat / 諾：Norsk skogkatt)は、ネコの品種のひとつである。原産はノルウェー、スカンディナヴィア半島を中心とした北ヨーロッパで、非常に寒冷な気候にも適応する長毛種。ノルウェーではよく知られた存在で、スコグカッテル“Skogkatter”もしくはスコウカッテル“Skaukatter”と呼ばれている。“skog”と“skau”はどちらも「森」に対する言葉で、ノルウェーの方言によって語の形が異なる。また、このネコについてよく知る人は特性から、「ノルウェーの森林ネコ」の意味のノシュク・スコグカット“Norsk Skogkatt”と呼ぶ。</strong>
+                    </p>
+                </div>
+            </section>
+
+            <section>
+                <h3>回り込みの解除</h3>
+
+                <p><strong>clear</strong> で回り込みを解除する</p>
+
+                <div class="container">
+                    <img class="section2-floated-image" src="https://images.unsplash.com/photo-1587501683331-0bc037921f59?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1548&q=80" alt="猫の画像01">
+                    <img class="section2-floated-image" src="https://images.unsplash.com/photo-1568283628224-afb7d07b1e87?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=991&q=80" alt="猫の画像02">
+                    <img class="section2-cleared-image" src="https://images.unsplash.com/photo-1610922306684-1e142f161799?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="鳥の画像">
+                </div>
+            </section>
+        </article>
+
+        <article>
+            <h2>float と clear のサンプル</h2>
+
+            <div class="container">
+                <section class="floated-section">
+                    <img class="floated-section-image" src="https://images.unsplash.com/photo-1582314070769-230e93c004da?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80" alt="馬の画像">
+                    <h3>三頭の馬</h3>
+                    <p>馬が三頭います。</p>
+                </section>
+                <section class="floated-section">
+                    <img class="floated-section-image" src="https://images.unsplash.com/photo-1607810993388-b33b2e9f045e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="象の画像">
+                    <h3>三頭の馬</h3>
+                    <p>像が二頭います。</p>
+                </section>
+                <section class="floated-section">
+                    <img class="floated-section-image" src="https://images.unsplash.com/photo-1598896130238-5606c05ec207?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80" alt="猫の画像">
+                    <h3>長毛種の猫</h3>
+                    <p>ノルウェージャンフォレストキャット(英：Norwegian Forest Cat / 諾：Norsk skogkatt)は、ネコの品種のひとつである。原産はノルウェー、スカンディナヴィア半島を中心とした北ヨーロッパで、非常に寒冷な気候にも適応する長毛種。ノルウェーではよく知られた存在で、スコグカッテル“Skogkatter”もしくはスコウカッテル“Skaukatter”と呼ばれている。“skog”と“skau”はどちらも「森」に対する言葉で、ノルウェーの方言によって語の形が異なる。また、このネコについてよく知る人は特性から、「ノルウェーの森林ネコ」の意味のノシュク・スコグカット“Norsk Skogkatt”と呼ぶ。</p>
+                </section>
+            </div>
+        </article>
+    </main>
+</body>
+</html>
