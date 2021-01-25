@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2-3. カラムの配置が変わるレイアウトの実装</title>
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <article>
+            <section class="column">
+                <div class="column-image">
+                    <img src="https://images.unsplash.com/photo-1611110262470-58cb9111cd74?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80" alt="画像1">
+                </div>
+                <div class="column-texts">
+                    <h2 class="column-texts-title">Model-View-Controller</h2>
+
+                    <p class="column-texts-p">The Model-View-Controller (MVC) design pattern assigns objects in an application one of three roles: model, view, or controller. The pattern defines not only the roles objects play in the application, it defines the way objects communicate with each other. Each of the three types of objects is separated from the others by abstract boundaries and communicates with objects of the other types across those boundaries. The collection of objects of a certain MVC type in an application is sometimes referred to as a layer—for example, model layer.</p>
+
+                    <div class="column-texts-link">
+                        <a href="https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/MVC.html#//apple_ref/doc/uid/TP40008195-CH32-SW1">もっとみる</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="column column--reverse">
+                <div class="column-texts">
+                    <h2 class="column-texts-title">Flux</h2>
+
+                    <p class="column-texts-p">Flux is the application architecture that Facebook uses for building client-side web applications. It complements React's composable view components by utilizing a unidirectional data flow. It's more of a pattern rather than a formal framework, and you can start using Flux immediately without a lot of new code.</p>
+
+                    <div class="column-texts-link">
+                        <a href="https://facebook.github.io/flux/docs/in-depth-overview/">もっとみる</a>
+                    </div>
+                </div>
+                <div class="column-image">
+                    <img src="https://images.unsplash.com/photo-1610659109918-309bb0840853?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1021&q=80" alt="画像2">
+                </div>
+            </section>
+        </article>
+    </main>
+</body>
+</html>
