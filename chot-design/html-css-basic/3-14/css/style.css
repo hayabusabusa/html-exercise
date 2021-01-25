@@ -1,0 +1,45 @@
+body {
+    background-color: #fefbfb;
+}
+
+main {
+    margin: auto;
+    width: 675px;
+    padding-bottom: 48px;
+}
+
+.container {
+    border: solid 1px #CCD0D9;
+    background-color: white;
+    padding: 24px;
+}
+
+.shadow-box {
+    margin: auto;
+    width: 80px;
+    height: 80px;
+    background: red;
+    box-shadow: 8px 8px 16px black;
+}
+
+.under-shadow-box {
+    margin: auto;
+    width: 80px;
+    height: 80px;
+    background: red;
+    box-shadow: 0 0 8px black;
+}
+
+.multiple-shadow-box {
+    margin: auto;
+    width: 80px;
+    height: 80px;
+    background: red;
+    box-shadow: 3px 3px 5px #000, -3px -3px 5px #f0f;
+}
+
+.text-shadow-box {
+    font-size: 28px;
+    color: blue;
+    text-shadow: 4px 4px 6px #aaa;
+}
