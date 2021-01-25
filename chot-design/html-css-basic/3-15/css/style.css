@@ -1,0 +1,56 @@
+body {
+    background-color: #fefbfb;
+}
+
+main {
+    margin: auto;
+    width: 675px;
+    padding-bottom: 48px;
+}
+
+.container {
+    border: solid 1px #CCD0D9;
+    background-color: white;
+    padding: 24px;
+}
+
+.pseudo-element-box:after {
+    color: red;
+    content: "ここから擬似要素";
+}
+
+.presudo-element-ballon {
+    background: #F6BB43;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 12px;
+    position: relative;
+}
+
+.presudo-element-ballon::after {
+    content: "";
+    position: absolute;
+    bottom: -16px;
+    left: 50%;
+    border-top: 16px solid #F6BB43;
+    border-right: 12px solid transparent;
+    border-left: 12px solid transparent;
+}
+
+.pseudo-element-container {
+    border: solid 1px #CCD0D9;
+    background-color: white;
+    padding: 24px;
+    position: relative;
+}
+
+.pseudo-element-container::before {
+    content: "ViewController.swift";
+    position: absolute;
+    background:  #CCD0D9;
+    font-weight: bold;
+    padding: 0 8px;
+    top: 0;
+    left: 0;
+}
