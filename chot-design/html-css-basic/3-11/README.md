@@ -49,4 +49,4 @@ floatを使う場合は、文字や画像などの要素が増えたときに、
 
 | float 指定なし | float 指定あり |
 | :-: | :-: |
-| <img width="676" alt="スクリーンショット 2021-01-25 10 59 31" src="https://user-images.githubusercontent.com/31949692/105652475-b36d8200-5efc-11eb-9269-fa198d91ddc3.png"> | <img width="676" alt="スクリーンショット 2021-01-25 11 00 59" src="https://user-images.githubusercontent.com/31949692/105652460-a781c000-5efc-11eb-91bf-3f5e3b6d9b36.png"> |
+| <img width="676" alt="スクリーンショット 2021-01-25 11 00 59" src="https://user-images.githubusercontent.com/31949692/105652460-a781c000-5efc-11eb-91bf-3f5e3b6d9b36.png"> | <img width="676" alt="スクリーンショット 2021-01-25 10 59 31" src="https://user-images.githubusercontent.com/31949692/105652475-b36d8200-5efc-11eb-9269-fa198d91ddc3.png"> |
