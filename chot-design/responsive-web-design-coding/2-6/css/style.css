@@ -1,0 +1,98 @@
+/* HEADER */
+
+.header {
+    width: 100%;
+    background: #e6ecf1;
+}
+.header__wrap {
+    /* Flex で並べてロゴとナビゲーションを `space-between` で左右端に配置する、垂直方向には真ん中揃え */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* pdding やボーダーを高さに含める */
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 48px;
+    /* 幅は 1280px までにして見やすくする、それ以降は親要素の `.header` だけのびるようにする */
+    max-width: 1280px;
+    height: 80px;
+}
+
+.header__logo {
+    width: 220px;
+}
+.header__logo img {
+    width: 100%;
+}
+
+.header__nav {
+    display: flex;
+}
+.header__nav-item {
+    margin-left: 36px;
+}
+.header__nav-item a {
+    color: #006a80;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    text-decoration: none;
+}
+
+.header__navsp {
+    /* PC 表示では使用しないため非表示にする */
+    display: none;
+}
+
+/* RESPONSIVE */
+
+@media all and (max-width: 767px) {
+
+    .header {
+        /* SP の時は上部に固定 */
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        /* 最前面に指定 */
+        z-index: 100;
+    }
+    .header__wrap {
+        padding-right: 24px;
+        padding-left: 12px;
+        height: 50px;
+    }
+
+    .header__logo {
+        width: 128px;
+    }
+
+    .header__nav {
+        /* 逆に SP の時は PC 用のを隠す */
+        display: none;
+    }
+
+    .header__navsp {
+        position: relative;
+        display: block;
+        width: 20px;
+        height: 20px;
+    }
+
+    .header__navsp-line {
+        position: absolute;
+        left: 2px;
+        background: #006a80;
+        width: 16px;
+        height: 1px;
+    }
+    .header__navsp-line--1 {
+        top: 3px;
+    }
+    .header__navsp-line--2 {
+        top: 9px;
+    }
+    .header__navsp-line--3 {
+        top: 15px;
+    }
+}
