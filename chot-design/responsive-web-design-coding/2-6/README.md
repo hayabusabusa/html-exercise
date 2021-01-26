@@ -9,16 +9,16 @@ PCよりSPの方が大きい画像を使用している場合がある。これ�
 
 > 今回は2倍のサイズで作成しているが、iPhone X・iPhone XSに対応する場合は3倍のサイズにする必要があるらしい
 
-- [ロゴ](http://yoshikikojima.github.io/responsive-sample/img/logo.png)
-- [キービジュアル]()
-- ABOUT
+- **[ロゴ](http://yoshikikojima.github.io/responsive-sample/img/logo.png)**
+- **[キービジュアル](https://images.unsplash.com/photo-1610377551984-9dc3f82aa31f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=100)**
+- **ABOUT**
     - [about 1枚目]()
     - [about 2枚目]()
-- INTERVIEW
+- **INTERVIEW**
     - [interview 1枚目]()
     - [interview 2枚目]()
     - [interview 3枚目]()
-- GALLERY
+- **GALLERY**
     - [gallery 1枚目]()
     - [gallery 2枚目]()
     - [gallery 3枚目]()
@@ -29,7 +29,7 @@ PCよりSPの方が大きい画像を使用している場合がある。これ�
     - [gallery 8枚目]()
     - [gallery 9枚目]()
     - [gallery 10枚目]()
-- [フッター]()
+- **[フッター]()**
 
 ## ヘッダーの実装
 
