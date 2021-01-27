@@ -135,6 +135,57 @@
     line-height: 1;
 }
 
+/* ABOUT */
+
+.about {
+    margin: 0 auto;
+    padding: 40px 0;
+    max-width: 1280px;
+}
+
+.about__title {
+    padding: 24px 48px;
+}
+
+.about__body-item {
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+}
+.about__body-item-image {
+    width: 46%;
+}
+.about__body-item-image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.about__body-item-texts {
+    box-sizing: border-box;
+    padding: 0 7.8%;
+    width: 54%;
+}
+.about__body-item-texts-copy {
+    color: #006a80;
+    font-size: 26px;
+    letter-spacing: 0.2em;
+    line-height: 1;
+    font-weight: bold;
+}
+.about__body-item-texts-p {
+    padding-top: 24px;
+    font-size: 14px;
+    letter-spacing: 0.2em;
+    line-height: 1.8;
+}
+
+.about__body-more {
+    padding-top: 60px;
+}
+.about__body-more a {
+    margin: 0 auto;
+}
+
 /* RESPONSIVE */
 
 @media all and (max-width: 767px) {
@@ -246,5 +297,47 @@
     .message__body-p {
         padding-top: 16px;
         font-size: 11px;
+    }
+
+    /* ABOUT */
+
+    .about {
+        padding: 24px 0;
+    }
+
+    .about__title {
+        padding-left: 0;
+        padding-bottom: 24px;
+        text-align: center;
+    }
+
+    .about__body-item {
+        /* 縦並びに変更 */
+        flex-direction: column;
+    }
+    .about__body-item--reverse {
+        /* 逆にした並びを元に戻す */
+        flex-direction: column-reverse;
+    }
+    .about__body-item-image {
+        width: 100%;
+    }
+    .about__body-item-image img {
+        height: 200px;
+    }
+    .about__body-item-texts {
+        padding: 24px 12px 48px 12px;
+        width: 100%;
+    }
+    .about__body-item-texts-copy {
+        font-size: 16px;
+    }
+    .about__body-item-texts-p {
+        padding-top: 12px;
+        font-size: 10px;
+    }
+
+    .about__body-more {
+        padding-top: 0;
     }
 }
