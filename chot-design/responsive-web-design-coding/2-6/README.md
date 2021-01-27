@@ -51,3 +51,37 @@ PCよりSPの方が大きい画像を使用している場合がある。これ�
 | キービジュアル部分 |
 | :-: |
 | <img width="1440" alt="スクリーンショット 2021-01-26 21 17 39" src="https://user-images.githubusercontent.com/31949692/105844111-08ec8080-601c-11eb-8c84-db26cdf97563.png"> |
+
+## インタビューの実装
+
+| インタビュー部分 PC | インタビュー部分 SP |
+| :-: | :-: |
+| <img width="1440" alt="スクリーンショット 2021-01-27 20 32 21" src="https://user-images.githubusercontent.com/31949692/105985484-db1c4000-60de-11eb-854e-590aed82457b.png"> | <img width="325" alt="スクリーンショット 2021-01-27 20 32 47" src="https://user-images.githubusercontent.com/31949692/105985521-e7a09880-60de-11eb-87c1-3aeaad20faca.png"> |
+
+### 画像のサイズについて
+
+画像のサイズは基本的には画像自体のサイズが反映される。  
+CSS で `width: 100%` とかにしてあげると、その幅に合わせて高さがコンテンツによって変わる。  
+
+そのままでは高さがガタガタになってしまうので、CSS でなんとかさせたい。
+
+```css
+.image-box {
+  position: relative;
+  overflow: hidden;
+  padding-top: 60%; /* 比率 */
+}
+.image-box img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: auto;
+  transform: translate(-50%, -50%);
+}
+```
+
+また、そのままではレイアウトシフトが発生してしまうので、`img` タグにサイズを指定してあげるのが今風らしい。
+
+- [サイズがバラバラな画像をレスポンシブで縦横比を揃えて表示させる - Qiita](https://qiita.com/becolomochi/items/265a7f940a1c809f5ba7)
+- [【2020年夏】imgタグにはwidthとheight属性を書くのがいいらしい](https://parashuto.com/rriver/development/img-size-attributes-are-back)
