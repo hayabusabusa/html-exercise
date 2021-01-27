@@ -81,6 +81,37 @@
     line-height: 2.25;
 }
 
+/* NEWS */
+
+.news {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 80px 48px;
+    max-width: 1280px;
+}
+
+.news__title {
+    font-size: 30px;
+    letter-spacing: 0.2em;
+    line-height: 1;
+    font-weight: bold;
+    color: #8fc0ca;
+}
+
+.news__body {
+    padding-top: 28px;
+}
+.news__body-item {
+    /* 子要素を横並びに指定 */
+    display: flex;
+    font-size: 14px;
+    letter-spacing: 0.2em;
+    line-height: 2.25;
+}
+.news__body-item-date {
+    padding-right: 24px;
+}
+
 /* RESPONSIVE */
 
 @media all and (max-width: 767px) {
@@ -156,5 +187,28 @@
         padding-left: 3px;
         font-size: 11px;
         line-height: 2;
+    }
+
+    /* NEWS */
+
+    .news {
+        padding: 40px 16px;
+    }
+
+    .news__title {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .news__body {
+        padding-top: 12px;
+    }
+    .news__body-item {
+        padding-top: 8px;
+        font-size: 10px;
+        line-height: 1.8;
+    }
+    .news__body-item-date {
+        padding-right: 24px;
     }
 }
