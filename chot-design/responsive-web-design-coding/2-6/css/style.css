@@ -81,6 +81,56 @@
     display: none;
 }
 
+@media all and (max-width: 767px) {
+    .header {
+        /* SP の時は上部に固定 */
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        /* 最前面に指定 */
+        z-index: 100;
+    }
+    .header__wrap {
+        padding-right: 24px;
+        padding-left: 12px;
+        height: 50px;
+    }
+
+    .header__logo {
+        width: 128px;
+    }
+
+    .header__nav {
+        /* 逆に SP の時は PC 用のを隠す */
+        display: none;
+    }
+
+    .header__navsp {
+        position: relative;
+        display: block;
+        width: 20px;
+        height: 20px;
+    }
+
+    .header__navsp-line {
+        position: absolute;
+        left: 2px;
+        background: #006a80;
+        width: 16px;
+        height: 1px;
+    }
+    .header__navsp-line--1 {
+        top: 3px;
+    }
+    .header__navsp-line--2 {
+        top: 9px;
+    }
+    .header__navsp-line--3 {
+        top: 15px;
+    }
+}
+
 /* MAIN VISUAL */
 
 .mv {
@@ -118,6 +168,30 @@
     line-height: 2.25;
 }
 
+@media all and (max-width: 767px) {
+    .mv {
+        width: 100%;
+        height: 524px;
+        /* スマホ用の画像に切り替える */
+        background-image: url("https://images.unsplash.com/photo-1610377551984-9dc3f82aa31f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=100");
+    }
+
+    .mv__texts {
+        position: absolute;
+        top: 80px;
+        left: 24px;
+    }
+    .mv__texts-title {
+        font-size: 20px;
+    }
+    .mv__texts-p {
+        padding-top: 20px;
+        padding-left: 3px;
+        font-size: 11px;
+        line-height: 2;
+    }
+}
+
 /* NEWS */
 
 .news {
@@ -149,6 +223,29 @@
     padding-right: 24px;
 }
 
+@media all and (max-width: 767px) {
+    .news {
+        padding: 40px 16px;
+    }
+
+    .news__title {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .news__body {
+        padding-top: 12px;
+    }
+    .news__body-item {
+        padding-top: 8px;
+        font-size: 10px;
+        line-height: 1.8;
+    }
+    .news__body-item-date {
+        padding-right: 24px;
+    }
+}
+
 /* MESSAGE */
 
 .message {
@@ -170,6 +267,22 @@
     font-size: 14px;
     letter-spacing: 0.2em;
     line-height: 1;
+}
+
+@media all and (max-width: 767px) {
+    .message {
+        padding: 48px 0;
+    }
+
+    .message__body-title {
+        font-size: 20px;
+    }
+
+    .message__body-p {
+        padding-top: 16px;
+        font-size: 11px;
+    }
+
 }
 
 /* ABOUT */
@@ -223,6 +336,48 @@
     margin: 0 auto;
 }
 
+@media all and (max-width: 767px) {
+    .about {
+        padding: 24px 0;
+    }
+
+    .about__title {
+        padding-left: 0;
+        padding-bottom: 24px;
+        text-align: center;
+    }
+
+    .about__body-item {
+        /* 縦並びに変更 */
+        flex-direction: column;
+    }
+    .about__body-item--reverse {
+        /* 逆にした並びを元に戻す */
+        flex-direction: column-reverse;
+    }
+    .about__body-item-image {
+        width: 100%;
+    }
+    .about__body-item-image img {
+        height: 200px;
+    }
+    .about__body-item-texts {
+        padding: 24px 12px 48px 12px;
+        width: 100%;
+    }
+    .about__body-item-texts-copy {
+        font-size: 16px;
+    }
+    .about__body-item-texts-p {
+        padding-top: 12px;
+        font-size: 10px;
+    }
+
+    .about__body-more {
+        padding-top: 0;
+    }
+}
+
 /* INTERVIEW */
 
 .interview {
@@ -274,6 +429,36 @@
     font-size: 14px;
     letter-spacing: 0.2em;
     line-height: 1.8;
+}
+
+@media all and (max-width: 767px) {
+    .interview {
+        padding-top: 60px;
+    }
+
+    .interview__title {
+        padding-left: 0;
+        padding-bottom: 36px;
+        text-align: center;
+    }
+
+    .interview__body {
+        flex-wrap: wrap;
+    }
+
+    .interview__body-item {
+        width: calc(50% - 1px);
+    }
+    .interview__body-item-texts {
+        padding: 16px 8px;
+    }
+    .interview__body-item-texts-title {
+        font-size: 11px;
+    }
+    .interview__body-item-texts-p {
+        padding-top: 4px;
+        font-size: 10px;
+    }
 }
 
 /* GALLERY */
@@ -441,192 +626,5 @@
     .footer__credit {
         font-size: 10px;
         padding-top: 12px;
-    }
-}
-
-/* RESPONSIVE */
-
-@media all and (max-width: 767px) {
-
-    /* HEADER */
-
-    .header {
-        /* SP の時は上部に固定 */
-        position: fixed;
-        top: 0px;
-        left: 0px;
-        width: 100%;
-        /* 最前面に指定 */
-        z-index: 100;
-    }
-    .header__wrap {
-        padding-right: 24px;
-        padding-left: 12px;
-        height: 50px;
-    }
-
-    .header__logo {
-        width: 128px;
-    }
-
-    .header__nav {
-        /* 逆に SP の時は PC 用のを隠す */
-        display: none;
-    }
-
-    .header__navsp {
-        position: relative;
-        display: block;
-        width: 20px;
-        height: 20px;
-    }
-
-    .header__navsp-line {
-        position: absolute;
-        left: 2px;
-        background: #006a80;
-        width: 16px;
-        height: 1px;
-    }
-    .header__navsp-line--1 {
-        top: 3px;
-    }
-    .header__navsp-line--2 {
-        top: 9px;
-    }
-    .header__navsp-line--3 {
-        top: 15px;
-    }
-
-    /* MAIN VISUAL */
-
-    .mv {
-        width: 100%;
-        height: 524px;
-        /* スマホ用の画像に切り替える */
-        background-image: url("https://images.unsplash.com/photo-1610377551984-9dc3f82aa31f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=100");
-    }
-
-    .mv__texts {
-        position: absolute;
-        top: 80px;
-        left: 24px;
-    }
-    .mv__texts-title {
-        font-size: 20px;
-    }
-    .mv__texts-p {
-        padding-top: 20px;
-        padding-left: 3px;
-        font-size: 11px;
-        line-height: 2;
-    }
-
-    /* NEWS */
-
-    .news {
-        padding: 40px 16px;
-    }
-
-    .news__title {
-        font-size: 18px;
-        text-align: center;
-    }
-
-    .news__body {
-        padding-top: 12px;
-    }
-    .news__body-item {
-        padding-top: 8px;
-        font-size: 10px;
-        line-height: 1.8;
-    }
-    .news__body-item-date {
-        padding-right: 24px;
-    }
-
-    /* MESSAGE */
-
-    .message {
-        padding: 48px 0;
-    }
-    .message__body-title {
-        font-size: 20px;
-    }
-    .message__body-p {
-        padding-top: 16px;
-        font-size: 11px;
-    }
-
-    /* ABOUT */
-
-    .about {
-        padding: 24px 0;
-    }
-
-    .about__title {
-        padding-left: 0;
-        padding-bottom: 24px;
-        text-align: center;
-    }
-
-    .about__body-item {
-        /* 縦並びに変更 */
-        flex-direction: column;
-    }
-    .about__body-item--reverse {
-        /* 逆にした並びを元に戻す */
-        flex-direction: column-reverse;
-    }
-    .about__body-item-image {
-        width: 100%;
-    }
-    .about__body-item-image img {
-        height: 200px;
-    }
-    .about__body-item-texts {
-        padding: 24px 12px 48px 12px;
-        width: 100%;
-    }
-    .about__body-item-texts-copy {
-        font-size: 16px;
-    }
-    .about__body-item-texts-p {
-        padding-top: 12px;
-        font-size: 10px;
-    }
-
-    .about__body-more {
-        padding-top: 0;
-    }
-
-    /* INTERVIEW */
-
-    .interview {
-        padding-top: 60px;
-    }
-
-    .interview__title {
-        padding-left: 0;
-        padding-bottom: 36px;
-        text-align: center;
-    }
-
-    .interview__body {
-        flex-wrap: wrap;
-    }
-
-    .interview__body-item {
-        width: calc(50% - 1px);
-    }
-    .interview__body-item-texts {
-        padding: 16px 8px;
-    }
-    .interview__body-item-texts-title {
-        font-size: 11px;
-    }
-    .interview__body-item-texts-p {
-        padding-top: 4px;
-        font-size: 10px;
     }
 }
