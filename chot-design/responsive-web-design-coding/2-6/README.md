@@ -2,34 +2,16 @@
 
 ## 完成形
 
+| PC | SP |
+| :-: | :-: |
+| ![chot-design_responsive-web-design-coding_2-6_index](https://user-images.githubusercontent.com/31949692/106277440-739bf700-627c-11eb-8be0-b3fa98eecfb5.jpg) | ![chot-design_responsive-web-design-coding_2-6_index html(iPhone X)](https://user-images.githubusercontent.com/31949692/106277337-3fc0d180-627c-11eb-9c45-0bc41c3555fa.png) |
+
 ## 画像の準備
 
 PCよりSPの方が大きい画像を使用している場合がある。これは **Retina 対応**するため。  
 レスポンシブサイトを作る際にPCの画像をそのままスマホに使ってしまうと画像の解像度が足らずボケてしまうことがあるので注意する。
 
 > 今回は2倍のサイズで作成しているが、iPhone X・iPhone XSに対応する場合は3倍のサイズにする必要があるらしい
-
-- **[ロゴ](http://yoshikikojima.github.io/responsive-sample/img/logo.png)**
-- **[キービジュアル](https://images.unsplash.com/photo-1610377551984-9dc3f82aa31f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=100)**
-- **ABOUT**
-    - [about 1枚目]()
-    - [about 2枚目]()
-- **INTERVIEW**
-    - [interview 1枚目]()
-    - [interview 2枚目]()
-    - [interview 3枚目]()
-- **GALLERY**
-    - [gallery 1枚目]()
-    - [gallery 2枚目]()
-    - [gallery 3枚目]()
-    - [gallery 4枚目]()
-    - [gallery 5枚目]()
-    - [gallery 6枚目]()
-    - [gallery 7枚目]()
-    - [gallery 8枚目]()
-    - [gallery 9枚目]()
-    - [gallery 10枚目]()
-- **[フッター]()**
 
 ## ヘッダーの実装
 
