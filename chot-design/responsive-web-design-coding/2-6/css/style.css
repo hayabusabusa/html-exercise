@@ -1,3 +1,40 @@
+/* GLOBAL */
+
+.head-text {
+    font-size: 32px;
+    letter-spacing: 0.2em;
+    line-height: 1;
+    font-weight: bold;
+    color: #8fc0ca;
+}
+
+.link-more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #444444;
+    width: 364px;
+    height: 50px;
+    font-size: 14px;
+    letter-spacing: 0.2em;
+    line-height: 1;
+    text-decoration: none;
+    color: #444444;
+}
+
+@media all and (max-width: 767px) {
+
+    .head-text {
+        font-size: 19px;
+    }
+
+    .link-more {
+        width: 250px;
+        height: 34px;
+        font-size: 11px;
+    }
+}
+
 /* HEADER */
 
 .header {
