@@ -1,0 +1,15 @@
+body {
+    background-color: #fefbfb;
+}
+
+main {
+    margin: auto;
+    width: 675px;
+    padding-bottom: 48px;
+}
+
+.container {
+    border: solid 1px #CCD0D9;
+    background-color: white;
+    padding: 24px;
+}
