@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2-11. フォームの作成 | 1冊ですべて身につく HTML & CSS とWEBデザイン入門編</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <article>
+            <h1>フォームを作る</h1>
+
+            <p><strong>form</strong> タグを使ってフォームを作る。</p>
+
+            <section>
+                <h2>input タグ</h2>
+
+                <p>一行のテキストを入力する。</p>
+
+                <div class="container">
+                    <input type="text" placeholder="プレースホルダー">
+                </div>
+            </section>
+            <section>
+                <h2>ラジオボタン</h2>
+
+                <p>複数の選択肢から1つ選択させる。</p>
+
+                <div class="container">
+                    <form action="">
+                        <input type="radio" name="gender" value="男性" checked>男性
+                        <input type="radio" name="gender" value="女性">女性
+                        <input type="radio" name="gender" value="その他">その他
+                    </form>
+                </div>
+            </section>
+            <section>
+                <h2>チェックボックス</h2>
+
+                <p>複数の選択肢から複数の項目を選択させる。</p>
+
+                <div class="container">
+                    <input type="checkbox" name="color" value="赤">赤
+                    <input type="checkbox" name="color" value="青">青
+                    <input type="checkbox" name="color" value="黄">黄
+                </div>
+            </section>
+            <section>
+                <h2>送信ボタン</h2>
+
+                <p>フォームの結果を送信する。</p>
+
+                <div class="container">
+                    <input type="submit" value="送信">
+                </div>
+            </section>
+            <section>
+                <h2>セレクトボックス</h2>
+
+                <p>さらに多くの選択肢から1つ選択させる。</p>
+
+                <div class="container">
+                    <select name="bloodtype">
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="O">O</option>
+                        <option value="AB">AB</option>
+                        <option value="その他" selected>その他</option>
+                    </select>
+                </div>
+            </section>
+            <section>
+                <h2>テキストエリア</h2>
+
+                <p>複数行のテキストを入力させる。</p>
+
+                <div class="container">
+                    <textarea name="message" placeholder="メッセージを入力"></textarea>
+                </div>
+            </section>
+        </article>
+    </main>
+</body>
+</html>
