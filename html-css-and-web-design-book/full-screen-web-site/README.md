@@ -25,3 +25,11 @@ img {
    max-width: 100%;
 }
 ```
+
+## ファビコンについて
+
+今回は Web ブラウザ用のファビコンのみ設定したが、他の端末にも対応させたい場合はもう少し処理を記述する必要がある。  
+
+楽をしたい場合は以下のサービスを利用する。
+
+- [RealFaviconGenerator](https://realfavicongenerator.net/)
