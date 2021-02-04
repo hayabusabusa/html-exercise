@@ -50,6 +50,12 @@ img {
    background: #0090aa;
 }
 
+@media all and (max-width: 767px) {
+   .page-title {
+      font-size: 2.5rem;
+   }
+}
+
 /* # =================================================================
    # Header
    # ================================================================= */
@@ -83,7 +89,19 @@ img {
 }
 
 @media all and (max-width: 767px) {
+   .header {
+      flex-direction: column;
+      align-items: center;
+   }
 
+   .header__nav {
+      font-size: 1rem;
+      margin-top: 10px;
+   }
+
+   .header__nav li {
+      margin: 0 20px;
+   }
 }
 
 /* # =================================================================
@@ -112,4 +130,10 @@ img {
 .home__content p {
    font-size: 1.125rem;
    margin: 10px 0 42px;
+}
+
+@media all and (max-width: 767px) {
+   .home__content {
+      margin-top: 20%;
+   }
 }
